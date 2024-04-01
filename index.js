@@ -75,9 +75,12 @@ function sanityCheck(arr) {
 } //checks array of arrays for invalid arrays
 
 const output = sanityCheck(newPerms(joinArr(genPerms(set))))
-console.log(output.length)
+console.log(`Original Set: ${set}`)
+console.log(`Pick: ${pick}`)
+console.log(`Distinct Permutations: ${output.length}`)
 
-//for explanation purposes only
+/*for explanation purposes only
+
 console.log('All permutations w/o duplicates')
 console.log(genPerms(set))
 console.log(genPerms(set).length)
@@ -92,3 +95,4 @@ console.log(newPerms(joinArr(genPerms(set))).length)
 console.log('Remove invalid permutations')
 console.log(output)
 console.log(output.length)
+*/
